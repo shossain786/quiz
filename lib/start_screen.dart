@@ -29,6 +29,9 @@ class StartScreen extends StatelessWidget {
           ),
           const SizedBox(height: 30),
           OutlinedButton.icon(
+            // onPressed: () {
+            //   startQuiz();
+            // },               //this commented out block and the below one both are okay
             onPressed: startQuiz,
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
