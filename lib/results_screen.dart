@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quiz/data/questions.dart';
-import 'package:quiz/questions_summary.dart';
+import 'package:quiz/questions_summary/questions_summary.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({
@@ -52,13 +52,9 @@ class ResultScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(
-              height: 30,
-            ),
+            const SizedBox(height: 30),
             QuestionsSummary(summaryData),
-            const SizedBox(
-              height: 30,
-            ),
+            const SizedBox(height: 30),
             TextButton.icon(
               onPressed: () {
                 onRestart;

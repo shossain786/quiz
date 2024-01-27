@@ -13,21 +13,25 @@ class QuestionIdentifier extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final questionNumber = questionIndex + 1;
-    return Container(
-      width: 30,
-      height: 30,
-      alignment: Alignment.center,
-      decoration: BoxDecoration(
-        color: isCorrectAnswer ? Colors.blue : Colors.red,
-        borderRadius: BorderRadius.circular(100),
-      ),
-      child: Text(
-        questionNumber.toString(),
-        style: const TextStyle(
-          fontWeight: FontWeight.bold,
-          color: Colors.deepPurple,
+    return Column(
+      children: [
+        Container(
+          width: 30,
+          height: 30,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: isCorrectAnswer ? Colors.blue : Colors.red,
+            borderRadius: BorderRadius.circular(100),
+          ),
+          child: Text(
+            questionNumber.toString(),
+            style: const TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.deepPurple,
+            ),
+          ),
         ),
-      ),
+      ],
     );
   }
 }
